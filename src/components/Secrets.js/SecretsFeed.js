@@ -117,8 +117,8 @@ const SecretWrapper = styled.div`
     `}
 
   @media screen and (max-width: 725px) {
-    width: 260px;
-    height: 300px;
+    width: 240px;
+    height: 290px;
   }
 `;
 const CardHolder = styled.div`
@@ -132,12 +132,11 @@ const CardBack = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  /* backface-visibility: hidden; */
-  /* background-color: #630700; */
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
+
   background-color: #630700;
   border-radius: 5px;
-  background-color: ${({ flip, id }) =>
-    flip.includes(id) ? "black" : "default"};
 `;
 const CardFront = styled.div`
   position: absolute;
@@ -145,6 +144,8 @@ const CardFront = styled.div`
   height: 100%;
   border-radius: 10px;
   transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 `;
 
 const SecretText = styled.div`
@@ -154,4 +155,7 @@ const SecretText = styled.div`
   line-height: 1.5;
   text-overflow: ellipsis;
   font-size: 18px;
+  @media screen and (max-width: 725px) {
+    font-size: 16px;
+  }
 `;
