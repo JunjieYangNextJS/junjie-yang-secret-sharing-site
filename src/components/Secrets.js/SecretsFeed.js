@@ -91,6 +91,7 @@ const SecretsWrapper = styled.div`
   @media screen and (max-width: 1050px) {
     display: flex;
     flex-direction: column;
+    gap: 250px;
   }
 `;
 const SecretWrapper = styled.div`
@@ -132,8 +133,8 @@ const CardBack = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  /* -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 
   background-color: #630700;
   border-radius: 5px;

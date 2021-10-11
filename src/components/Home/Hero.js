@@ -94,6 +94,11 @@ const SecretForm = styled.form`
   display: flex;
   justify-content: flex-start;
   margin-top: 40px;
+
+  @media screen and (max-width: 725px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SecretTextarea = styled(TextareaAutosize)`
