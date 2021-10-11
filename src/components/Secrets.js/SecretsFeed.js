@@ -44,7 +44,7 @@ export default function SecretsFeed() {
 
     setTimeout(() => {
       setHide((hide) => [...hide, id]);
-    }, 10000);
+    }, 5000);
   };
 
   return (

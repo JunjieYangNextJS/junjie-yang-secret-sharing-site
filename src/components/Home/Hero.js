@@ -34,9 +34,9 @@ export default function Hero() {
         <HeroContent>
           Secret Share is a platform where you can feel safe to share your
           darkest little secrets that you cannot share with anyone you know
-          while needing to pour them out. Every secret will only be viewed by
-          one person for 10 seconds, then it will be forever gone. Feel safe and
-          tell one of your little secrets!{" "}
+          while needing to pour them out. Every secret will be viewed only by
+          one person for only 5 seconds, then it will be forever gone. Feel safe
+          and tell one of your little secrets!{" "}
         </HeroContent>
       </HeroIntro>
       <SecretForm>
