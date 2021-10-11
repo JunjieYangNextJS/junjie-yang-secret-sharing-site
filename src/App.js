@@ -1,14 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import RulesPage from "./pages/RulesPage";
+import SecretsPage from "./pages/SecretsPage";
 import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/rules">
-          <RulesPage />
+        <Route path="/secrets">
+          <SecretsPage />
         </Route>
         <Route path="/" exact>
           <Homepage />

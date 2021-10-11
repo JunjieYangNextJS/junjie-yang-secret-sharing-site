@@ -7,7 +7,6 @@ function Homepage() {
   return (
     <HomeContainer>
       <Navbar />
-      1
       <Hero />
     </HomeContainer>
   );

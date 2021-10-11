@@ -15,7 +15,7 @@ export default function Navbar() {
           <NavLabel href="/">Home</NavLabel>
         </NavElement>
         <NavElement>
-          <NavLabel href="/rules">Rules</NavLabel>
+          <NavLabel href="/secrets">Secrets</NavLabel>
         </NavElement>
       </NavWrapper>
     </NavContainer>
@@ -26,14 +26,21 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
+  padding: 0 90px;
   height: 90px;
   transition: all 0.3s ease-in-out;
+  margin-bottom: 80px;
 
-  /* :hover { */
-  background-color: #14041a;
-  box-shadow: 0 1px 1px 0 #4e4452;
-  /* } */
+  :hover {
+    background-color: #14041a;
+    box-shadow: 0 1px 1px 0 #4e4452;
+    height: 120px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 725px) {
+    padding: 0 20px;
+  }
 `;
 
 const LogoWrapper = styled.div`
@@ -45,10 +52,10 @@ const LogoElement = styled(Aiqfome)`
   height: 37px;
   width: 37px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
   :hover {
-    height: 42px;
-    width: 42px;
+    height: 60px;
+    width: 60px;
   }
 `;
 
@@ -62,12 +69,16 @@ const NavElement = styled.div`
   height: 90px;
   padding: 0 80px;
   font-size: 22px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   :hover {
-    font-size: 26px;
-    /* box-shadow: 0 0 5px 1px #4e4452; */
-    padding: 0 75px;
+    font-size: 50px;
+    /* color: #630700; */
+    /* padding: 0 74px; */
+  }
+
+  @media screen and (max-width: 725px) {
+    padding: 0 20px;
   }
 `;
 
